@@ -1,0 +1,13 @@
+# A2-4: the default RNN hidden size with other dropout values. Dropout 0.2 is already in a2_lr.
+name: a2_dropout
+method: grid
+metric:
+  name: best/val_loss
+  goal: minimize
+parameters:
+  arch:
+    value: a2
+  tags:
+    value: [A2-4]
+  dropout:
+    values: [0, 0.5]

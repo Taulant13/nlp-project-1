@@ -1,0 +1,15 @@
+# A2-2: side comparison, LSTM against the chosen GRU, in both directions.
+name: a2_cell
+method: grid
+metric:
+  name: best/val_loss
+  goal: minimize
+parameters:
+  arch:
+    value: a2
+  tags:
+    value: [A2-2]
+  cell:
+    value: lstm
+  bidirectional:
+    values: [false, true]

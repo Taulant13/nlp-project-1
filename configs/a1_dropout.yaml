@@ -1,0 +1,13 @@
+# A1-4: the default hidden size with other dropout values. Dropout 0.2 is already in a1_lr.
+name: a1_dropout
+method: grid
+metric:
+  name: best/val_loss
+  goal: minimize
+parameters:
+  arch:
+    value: a1
+  tags:
+    value: [A1-4]
+  dropout:
+    values: [0, 0.5]

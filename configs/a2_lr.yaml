@@ -1,0 +1,13 @@
+# A2-1: which learning rate region works for Architecture 2?
+name: a2_lr
+method: grid
+metric:
+  name: best/val_loss
+  goal: minimize
+parameters:
+  arch:
+    value: a2
+  tags:
+    value: [A2-1]
+  lr:
+    values: [0.01, 0.001, 0.0001]

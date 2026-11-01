@@ -1,0 +1,13 @@
+# A1-3: which input format helps, and are the observations used at all?
+name: a1_input
+method: grid
+metric:
+  name: best/val_loss
+  goal: minimize
+parameters:
+  arch:
+    value: a1
+  tags:
+    value: [A1-3]
+  input_format:
+    values: [interaction, joint, h_only]

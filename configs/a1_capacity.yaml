@@ -1,0 +1,15 @@
+# A1-4: how much capacity and regularization? Other hidden sizes.
+name: a1_capacity
+method: grid
+metric:
+  name: best/val_loss
+  goal: minimize
+parameters:
+  arch:
+    value: a1
+  tags:
+    value: [A1-4]
+  hidden:
+    values: [64, 1024]
+  dropout:
+    values: [0, 0.2, 0.5]

@@ -1,0 +1,13 @@
+# A2-3: does the way the story is presented matter?
+name: a2_story
+method: grid
+metric:
+  name: best/val_loss
+  goal: minimize
+parameters:
+  arch:
+    value: a2
+  tags:
+    value: [A2-3]
+  story_format:
+    values: [o1_o2_h, separate]

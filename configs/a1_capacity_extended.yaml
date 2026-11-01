@@ -1,0 +1,15 @@
+# A1-4: hidden 1024 and dropout 0.5 were on the edge of the first grid, so test further.
+name: a1_capacity_extended
+method: grid
+metric:
+  name: best/val_loss
+  goal: minimize
+parameters:
+  arch:
+    value: a1
+  tags:
+    value: [A1-4]
+  hidden:
+    values: [2048]
+  dropout:
+    values: [0.5, 0.7]

@@ -1,0 +1,9 @@
+# Install PyTorch first, as the README shows: torch==2.14.1+cu126
+lightning==2.6.6
+datasets==5.1.0
+wandb==0.31.0
+nltk==3.10.4
+numpy==2.4.6
+PyYAML==6.0.3
+jupyter==1.1.1
+nbconvert==7.17.2
